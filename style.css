@@ -1,0 +1,124 @@
+header {
+    background-color: rgb(33, 127, 204);
+    margin:0;
+    height: 50px;
+   
+}
+body {
+    background-color: rgb(207, 223, 233);
+    margin: 0;
+}
+
+h1{
+    color: white; 
+    margin-left: 80px;
+}
+
+.new_exercise{
+    width: 350px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 85px;
+    margin-right: 20px;
+    padding:25px;
+    border-radius: 12px;
+}
+.new_exercise label{
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section.tasks div {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    gap: 148px; 
+    padding: 50px; 
+}
+
+
+#backlog_title{
+    padding:10px;
+    border-radius: 8px;
+    background-color: lightgray;
+    width: 55px;
+    color: rgb(187, 180, 180);
+}
+
+ul li{
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type:none;
+    border-radius: 5px;
+    border-style: hidden hidden hidden solid;
+    border-width: thin thin thin 5px;
+}
+#backlog li{
+    border-left-color: lightgray;
+
+}
+#process_title{
+    padding:10px;
+    border-radius: 8px;
+    background-color: lightskyblue;
+    color:rgb(61, 166, 231) ;
+    width: 80px;
+    text-decoration: aqua;
+}
+#process li{
+    border-left-color: lightskyblue;
+}
+#ready_title{
+    padding:10px;
+    border-radius: 8px;
+    background-color: lightgreen;
+    color:rgb(101, 191, 101) ;
+    width: 80px;
+    text-decoration: lightgreen;
+}
+#ready li{
+    border-left-color: lightgreen;
+}
+#basket_title{
+    padding:10px;
+    border-radius: 8px;
+    background-color: rgb(232, 173, 173);
+    color: rgb(196, 123, 123);
+    width: 80px;
+    text-decoration: rgb(239, 139, 139);
+}
+#basket li{
+    border-left-color: rgb(232, 173, 173);
+}
+
+#clear_button{
+    background-color: rgb(181, 103, 103);
+    border-radius: 5px;
+    padding: 5px;
+    width: 220px;
+    height: 40px;
+    color: white;
+    border: none;
+}
+#add_button{
+    background-color: rgb(33, 127, 204);
+    border-radius: 4px;
+    padding: 8px;
+    width: 140px;
+    color: white;
+    border: none;
+    display: table-row;
+}
+#task_name{
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: lightgray;
+    height: 30px;
+    border-radius: 8px;
+    margin: 10px 10px 0px 0px;
+    padding: 5px;}
