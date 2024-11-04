@@ -1,52 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
-    <title>todolist</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Список задач</title>
 </head>
-<body>
-    <header>
-        <h1>Список задач</h1>
-    </header>
-    <main>
-        <section class="new_exercise">
-            <label>Новая задача</label>
-            <div>
-                <input id="task_name" name="taskName" type="text" placeholder="Название задачи">
-                <button id="add_button" type="submit">+ Добавить</button>
-            </div>
-        </section>
-        <section class="tasks">
-            <div>
-                <ul id="backlog">
-                <div id="backlog_title">Бэклог</div>
-                <li>Выучить JS</li>
-                <li>Выучить React</li>
-                <li>Сделать домашку</li>
-            </ul>
-            <ul id="process">
-                <div id="process_title">В процессе</div>
-                <li>Выпить смузи</li>
-                <li>Попыть воды</li>
-            </ul>
-            <ul id="ready">
-                <div id="ready_title">Готово</div>
-                <li>Позвонить маме</li>
-                <li>Погадить кота</li>
-            </ul>
-                
-            <ul id="basket">
-                <div id="basket_title">Корзина</div>
-                <li>Сходить погулять</li>
-                <li>Прочитать Войну и Мир</li>
-                <button id="clear_button" type="submit">X Очистить</button>
-            </ul>
-        </div>
-        </section>
-    </main>
+
+
+<body class="board-app">
+
+
+  <main class="board-app__main">
+    <div class="board-app__inner">
+      <section class="add-task">
+
+
+      </section>
+      <section class="taskboard">
+
+
+      </section>
+    </div>
+  </main>
+  <script src="src/main.js" type="module"></script>
 </body>
-<script src="/src/main.js"></script>
 </html>

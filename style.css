@@ -12,6 +12,7 @@ body {
 h1{
     color: white; 
     margin-left: 80px;
+    font-size:x-large;
 }
 
 .new_exercise{
@@ -27,7 +28,32 @@ h1{
     font-weight: bold;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column; 
 }
+
+.new_exercise__input-wrapper {
+  margin-bottom: 10px; 
+}
+
+.new_exercise__controls {
+  display: flex; 
+  align-items: center; 
+}
+
+input {
+  margin-right: 10px; 
+  flex-grow: 1; 
+  height: 30px;
+}
+
+button {
+  padding: 5px 10px; 
+  height: 30px;
+
+}  
+
 section.tasks div {
     display: grid; 
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
@@ -113,6 +139,7 @@ ul li{
     color: white;
     border: none;
     display: table-row;
+
 }
 #task_name{
     border-style: solid;
