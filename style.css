@@ -7,6 +7,8 @@ header {
 body {
     background-color: rgb(207, 223, 233);
     margin: 0;
+    
+
 }
 
 h1{
@@ -54,12 +56,16 @@ button {
 
 }  
 
-section.tasks div {
+section.taskboard div {
     display: grid; 
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
     gap: 148px; 
     padding: 50px; 
 }
+.taskboard{
+    display: flex;
+}
+
 
 
 #backlog_title{
@@ -144,8 +150,18 @@ ul li{
 #task_name{
     border-style: solid;
     border-width: 0.5px;
-    border-color: lightgray;
+    border-color: rgb(219, 210, 210);
     height: 30px;
     border-radius: 8px;
     margin: 10px 10px 0px 0px;
     padding: 5px;}
+
+    #list_title{
+        background-color:rgb(192, 185, 185);
+        padding:10px;
+      border-radius: 8px;
+       width: 150px;
+    }
+    #tasklist li{
+        border-left-color: rgb(192, 185, 185);
+    }
