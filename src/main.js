@@ -5,19 +5,25 @@ import FormAddTaskComponent from './views/form-add-task-component.js';
 
 import TaskListComponent from './views/task-list-component.js';
 
+ import TasksBoardPresenter from './presenter/tasks-board-presenter.js';
+
+ import TasksModel from './model/task-model.js';
+
 const formContainer = document.querySelector('.add-task');
 const bodyContainer= document.querySelector('.board-app');
-const taskListContainer = document.querySelector('.taskboard');
+const tasksBoardContainer = document.querySelector('.taskboard');
+const tasksModel = new TasksModel();
+const tasksBoardPresenter = new TasksBoardPresenter({
+ boardContainer: tasksBoardContainer,
+ tasksModel,
+});
+
 
 render(new HeaderComponent(), bodyContainer, RenderPosition.BEFOREBEGIN);
 
 
 render(new FormAddTaskComponent(), formContainer);
-
-var i=0
-while (i<4) {
-    render(new TaskListComponent(), taskListContainer,RenderPosition.AFTERBEGIN);
-    i+=1;}
+tasksBoardPresenter.init()
 
 
 

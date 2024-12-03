@@ -1,21 +1,25 @@
 import {createElement} from '../framework/render.js';
 
 
-function createTaskListComponent() {
+function createTaskListComponent(status) {
+  const {status_title, label}=status;
     return (
-        `<div><ul id="tasklist">
-                <div id="list_title">Название блока</div>
-                <li>Название первой задачи</li>
-                <li>Название первой задачи</li>
-                <li>Название первой задачи</li>
-          </ul></div>`
+        `<article>
+        <h3>${label}</h3>
+        <div id="tasklist_${status_title}"></div>
+        </article>`
       );
 }
 
 
 export default class TaskListComponent {
+  
+  constructor({task_status}){
+    this.status=task_status;
+  }
   getTemplate() {
-    return createTaskListComponent();
+    //console.log(`heat waves: ${this.status.status_title}`);
+    return createTaskListComponent(this.status);
   }
 
 
