@@ -37,12 +37,12 @@ export const tasks=[
     {
         'id':`9`,
         'title':`Сходить погулять`,
-        'status':`basket`
+        'status':`ready`
     },
     {
         'id':`10`,
         'title':`Прочитать Войну и Мир`,
-        'status':`basket`
+        'status':`ready`
     },
     
 ]
